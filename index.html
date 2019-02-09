@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contrastful - Test contrast across three color values</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.css" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Contrastful</h1>
+        <p class="subline">Compare the color contrast interactions of three colors.</p>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <div class="box">
+                    <label for="color-1">Color 1</label>
+                    <input type="text" id="color-1" class="color-picker" name="color-1" />
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="box">
+                    <label for="color-2">Color 2</label>
+                    <input type="text" id="color-2" class="color-picker"  name="color-2" />
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="box">
+                    <label for="color-3">Color 3</label>
+                    <input type="text" id="color-3" class="color-picker" name="color-3" />
+                </div>
+            </div>
+        </div>
+        <section class="row color_cards" aria-describedby="section-heading">
+            <h2 id="section-heading" class="sr-only">Color cards</h2>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
